@@ -37,6 +37,10 @@ export function SignInForm() {
     },
   });
 
+  const onSubmit = (values: FormData) => {
+    console.log({ values });
+  };
+
   return (
     <div className="p-8 rounded-xl bg-background flex flex-col gap-y-6">
       <h1 className="text-2xl md:text-[32px] md:leading-[50px] font-semibold">
@@ -44,7 +48,10 @@ export function SignInForm() {
       </h1>
 
       <Form {...form}>
-        <form className="flex flex-col gap-y-6">
+        <form
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="flex flex-col gap-y-6"
+        >
           {Object.keys(formSchema.shape).map((key) => (
             <FormField
               control={form.control}
