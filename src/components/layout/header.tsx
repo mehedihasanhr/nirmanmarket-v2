@@ -7,7 +7,9 @@ export function Header() {
   return (
     <header className="bg-[#FDF7FB]">
       <div className="container py-[17px] flex items-center justify-between gap-4">
-        <Logo className="w-[282px] h-[54px]" />
+        <Link href="/" className="w-[180px] border md:w-[282px] md:h-[54px]">
+          <Logo className="w-full h-full object-fill" />
+        </Link>
 
         <div className="flex items-center gap-2.5">
           <Button variant="ghost" size="icon" asChild>

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "remixicon/fonts/remixicon.css";
 import "@/styles/globals.css";
 import { Inter, Montserrat, Poppins } from "next/font/google";
 
