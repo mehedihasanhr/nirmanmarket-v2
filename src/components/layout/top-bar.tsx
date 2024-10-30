@@ -28,9 +28,9 @@ export function TopBar() {
       </div>
 
       <LanguageSwitch
-        variant="ghost"
+        variant="outline"
         size="sm"
-        className="w-[85px] border-none flex items-center px-3 py-1 justify-between"
+        className="w-[85px] bg-transparent shadow-none flex items-center px-3 py-1 justify-between"
       />
     </div>
   );

@@ -13,12 +13,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { startCase } from "lodash";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
-import { Separator } from "../ui/separator";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
-import { Label } from "../ui/label";
-import { Checkbox } from "../ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const formSchema = z.object({
   name: z.string().min(1, "Name is require."),
@@ -52,7 +52,7 @@ export function RegisterForm() {
 
   return (
     <div className="p-8 rounded-xl bg-background flex flex-col gap-y-6">
-      <h1 className="text-2xl md:text-[32px] md:leading-[50px] font-semibold">
+      <h1 className="text-lg md:text-2xl lg:text-[32px] lg:leading-[50px] font-semibold">
         Welcome to nirmanmarket, <br /> Register to continue.
       </h1>
 
@@ -121,7 +121,7 @@ export function RegisterForm() {
             )}
           />
 
-          <Button className="rounded-full md:h-14 text-lg md:text-2xl font-bold leading-7">
+          <Button className="rounded-full md:h-14 text-lg sm:text-xl lg:text-2xl font-bold leading-7">
             Create an account
           </Button>
 
@@ -134,7 +134,7 @@ export function RegisterForm() {
 
           <Button
             variant="outline"
-            className="rounded-full text-lg md:text-2xl md:h-14 font-bold leading-7"
+            className="rounded-full text-lg sm:text-xl lg:text-2xl md:h-14 font-bold leading-7"
           >
             Continue with google
           </Button>

@@ -1,0 +1,192 @@
+[
+  {
+    "header": "Flat & Property",
+    "uuid": "3f9b618a-70b1-4d9b-99b2-7a0b093ab2b1",
+    "icon": "Building",
+    "links": [
+      {
+        "label": "Apartments & Flats for Sale",
+        "link": "/flats-for-sale",
+        "uuid": "91a2b3ed-cc7b-41a5-9205-4b979fba4739"
+      },
+      {
+        "label": "Houses for Rent",
+        "link": "/houses-for-rent",
+        "uuid": "bb1b44f6-1af7-462a-a7f0-442b02360eb2"
+      },
+      {
+        "label": "Commercial Properties",
+        "link": "/commercial-properties",
+        "uuid": "1ad512fc-f107-4dd3-94f4-573531b0c61a"
+      },
+      {
+        "label": "Real Estate Listings",
+        "link": "/real-estate",
+        "uuid": "b2ec68a7-4009-4a21-a973-e7db16010ba3"
+      },
+      {
+        "label": "Land for Sale",
+        "link": "/land-for-sale",
+        "uuid": "dcde7ebd-1e9b-4bb6-8eeb-9b8918a09799"
+      },
+      {
+        "label": "Property Management Services",
+        "link": "/property-management",
+        "uuid": "b764927b-3c7f-463e-9d89-067e4de25382"
+      }
+    ]
+  },
+  {
+    "header": "Product & Materials",
+    "uuid": "1dce3042-7df5-4eae-8c36-69d4f88d9c34",
+    "icon": "Package",
+    "links": [
+      {
+        "label": "Construction Materials",
+        "link": "/construction-materials",
+        "uuid": "2c6d40ac-2b40-43a4-8b30-5b3370e206d4"
+      },
+      {
+        "label": "Building Supplies",
+        "link": "/building-supplies",
+        "uuid": "220f0275-2b9a-4f96-8bb9-c6e4e4d28730"
+      },
+      {
+        "label": "Electrical & Plumbing",
+        "link": "/electrical-plumbing",
+        "uuid": "fe88a31d-8462-4637-97cc-37aebbc32748"
+      },
+      {
+        "label": "Flooring & Tiles",
+        "link": "/flooring-tiles",
+        "uuid": "39cf1fc6-6219-46a0-8dbd-df1e3e264102"
+      },
+      {
+        "label": "Windows & Doors",
+        "link": "/windows-doors",
+        "uuid": "cdeabb08-0b9a-46e5-8dbf-cf748dd54d6e"
+      },
+      {
+        "label": "Paint & Finishing",
+        "link": "/paint-finishing",
+        "uuid": "2bffde57-fbe3-4a9f-83ea-b0c9ae4779ed"
+      }
+    ]
+  },
+  {
+    "header": "Contractor",
+    "uuid": "8fbf7cd7-178b-4651-8452-1037e1ac55aa",
+    "icon": "Hammer",
+    "links": [
+      {
+        "label": "Home Renovation",
+        "link": "/home-renovation",
+        "uuid": "88569bfa-39d3-4215-9fe7-704ca9371ae6"
+      },
+      {
+        "label": "Plumbing Services",
+        "link": "/plumbing-services",
+        "uuid": "c23cc86a-dc3c-4210-a278-d21da6149fcf"
+      },
+      {
+        "label": "Electrical Services",
+        "link": "/electrical-services",
+        "uuid": "6d717324-21de-47f8-8175-332a6273092b"
+      },
+      {
+        "label": "Painting Services",
+        "link": "/painting-services",
+        "uuid": "de03bb90-73d6-4f54-b6fe-1088401189e7"
+      },
+      {
+        "label": "HVAC & Cooling",
+        "link": "/hvac-cooling",
+        "uuid": "53dbab91-9981-486e-b2a5-9886189f0b9b"
+      },
+      {
+        "label": "Roofing Services",
+        "link": "/roofing-services",
+        "uuid": "b8f1a792-e198-4699-b62e-92dc846833d5"
+      }
+    ]
+  },
+  {
+    "header": "Service Provider",
+    "uuid": "88bfa69d-3d1f-4de0-85cc-c263be9d7059",
+    "icon": "UserCheck",
+    "links": [
+      {
+        "label": "Interior Design",
+        "link": "/interior-design",
+        "uuid": "58756ec6-7f46-4b28-b369-107bd15bb385"
+      },
+      {
+        "label": "Landscaping Services",
+        "link": "/landscaping-services",
+        "uuid": "485c5a94-5cf3-4de3-b98e-06a41d6e0193"
+      },
+      {
+        "label": "Security & Surveillance",
+        "link": "/security-surveillance",
+        "uuid": "af042805-705e-4b40-bc9e-1ce462295f47"
+      },
+      {
+        "label": "Cleaning Services",
+        "link": "/cleaning-services",
+        "uuid": "57b78fd6-8983-45ae-b7da-bd601f218084"
+      },
+      {
+        "label": "Waste Management",
+        "link": "/waste-management",
+        "uuid": "90b999ef-3b9e-472e-83d7-e90e78fae80e"
+      }
+    ]
+  },
+  {
+    "header": "Standard Code & Video",
+    "uuid": "6c6ff1fc-f99a-4708-91db-dbc9af6d1986",
+    "icon": "Book",
+    "links": [
+      {
+        "label": "Building Codes & Standards",
+        "link": "/building-codes",
+        "uuid": "7b153d71-d2f3-48e6-a134-2265307bbd9e"
+      },
+      {
+        "label": "Architectural Guidelines",
+        "link": "/architectural-guidelines",
+        "uuid": "a71f703d-fd7f-44e4-8025-44c2e7bc7e3b"
+      },
+      {
+        "label": "Energy Efficiency Standards",
+        "link": "/energy-efficiency-standards",
+        "uuid": "191878e2-90c8-4626-8f63-330b7b0e1e8b"
+      },
+      {
+        "label": "Video Tutorials on Standards",
+        "link": "/video-tutorials",
+        "uuid": "32b97854-42a6-4867-95e8-5e3e7bb7efb5"
+      },
+      {
+        "label": "Construction Codes Compliance",
+        "link": "/construction-codes-compliance",
+        "uuid": "3e53c4b7-b0c1-4701-9f9a-08d5764cf9cb"
+      },
+      {
+        "label": "Inspection and Permit Guidelines",
+        "link": "/inspection-permit-guidelines",
+        "uuid": "11f30c77-9999-4fc6-849c-1a9bc56f2a78"
+      },
+      {
+        "label": "Regulatory Updates",
+        "link": "/regulatory-updates",
+        "uuid": "a71f703d-fd7f-44e4-8025-44c2e7bc7e3b"
+      },
+      {
+        "label": "Safety Codes and Regulations",
+        "link": "/safety-codes-regulations",
+        "uuid": "191878e2-90c8-4626-8f63-330b7b0e1e8b"
+      }
+    ]
+  }
+]
