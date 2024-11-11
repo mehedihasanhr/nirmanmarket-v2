@@ -2,7 +2,19 @@ import { Hero } from "@/components/pages";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import ProductGrid from "@/components/common/products-grid";
+import {
+  ProductGrid,
+  ProductAds,
+  ProductCollectionGrid,
+  ProductCollectionHeading,
+  ProductCollectionContainer,
+} from "@/components/common/product-collection";
+import ProductCard from "@/components/common/product-card";
+import { faker } from "@faker-js/faker";
+import React from "react";
+import SellerSlider from "@/components/pages/home/seller-slider";
+import Contact from "@/components/pages/home/contact";
+import BlogCard from "@/components/pages/home/blogCard";
 
 // categories
 const categories = [
@@ -112,16 +124,71 @@ export default function Home() {
       </section>
 
       {/* Products */}
-      <section>
-        <ProductGrid
-          heading="Flash sale"
-          ads={[
-            "https://picsum.photos/seed/picsum/300/200",
-            "https://picsum.photos/seed/picsum/300/200",
-          ]}
-          data={[]}
-        />
-      </section>
+      {Array.from({ length: 4 }).map((_, idx: number) => (
+        <React.Fragment key={idx}>
+          <section>
+            <ProductCollectionContainer>
+              <ProductCollectionHeading heading="Flash sales" />
+              <ProductCollectionGrid isHasAds>
+                <ProductAds
+                  ads={[
+                    "https://picsum.photos/seed/picsum/300/200",
+                    "https://picsum.photos/seed/picsum/300/200",
+                  ]}
+                />
+
+                <ProductGrid>
+                  {Array.from({ length: 10 }).map((_, index) => (
+                    <ProductCard
+                      key={index}
+                      product={{
+                        image: "https://picsum.photos/seed/picsum/300/200",
+                        title: faker.commerce.productName(),
+                        description: faker.commerce.productDescription(),
+                        location: faker.location.city(),
+                        price: Number(faker.finance.amount()),
+                        rating: 2.5,
+                        discount: 10,
+                        discountType: "amount",
+                      }}
+                    />
+                  ))}
+                </ProductGrid>
+              </ProductCollectionGrid>
+            </ProductCollectionContainer>
+          </section>
+
+          {/* Ads  */}
+          <div className="grid grid-cols-2 gap-4 container py-10">
+            <div>
+              <Image
+                src="https://placehold.co/600x300/fafafa/a6a6a6/png?text=Ads"
+                alt=""
+                width={600}
+                height={300}
+                loading="lazy"
+                className="rounded-lg"
+              />
+            </div>
+
+            <div>
+              <Image
+                src="https://placehold.co/600x300/fafafa/a6a6a6/png?text=Ads"
+                alt=""
+                width={600}
+                height={300}
+                loading="lazy"
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+        </React.Fragment>
+      ))}
+
+      {/* Seller slider */}
+      <SellerSlider />
+      <Contact />
+      <BlogCard />
     </div>
   );
 }
