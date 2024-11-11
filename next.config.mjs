@@ -22,6 +22,11 @@ const nextConfig = {
         hostname: "img.freepik.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
+        pathname: "/**",
+      },
     ],
   },
 };

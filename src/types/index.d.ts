@@ -8,3 +8,9 @@ export type Category = {
     uuid: string;
   }[];
 };
+
+// slider image data
+export type SliderImageData = {
+  id: string | number;
+  image: string;
+};

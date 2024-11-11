@@ -13,7 +13,9 @@ export function TopBar() {
   return (
     <div className="container flex items-center justify-between gap-4 py-1">
       <div className="flex items-center gap-2.5">
-        <h6 className="whitespace-nowrap text-sm"> Follow us: </h6>
+        <p className="whitespace-nowrap text-xs font-medium text-neutral-700">
+          Follow us:
+        </p>
         <div className="flex items-center space-x-0.5">
           {_.map(medias, (m) => (
             <Link
