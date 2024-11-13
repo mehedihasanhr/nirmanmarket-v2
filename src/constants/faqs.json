@@ -1,0 +1,37 @@
+[
+  {
+    "id": "item-1",
+    "title": "What types of construction services do you offer?",
+    "description": "We provide a wide range of services, including residential and commercial construction, renovations, remodeling, and custom projects."
+  },
+  {
+    "id": "item-2",
+    "title": "How do I get a construction project quote?",
+    "description": "You can contact us directly through our website, phone, or email, and we will provide a detailed project quote after discussing your requirements."
+  },
+  {
+    "id": "item-3",
+    "title": "How long does a typical project take?",
+    "description": "Project timelines vary depending on the scope and complexity, but we always aim to complete projects on time while maintaining quality."
+  },
+  {
+    "id": "item-4",
+    "title": "Are you licensed and insured?",
+    "description": "Yes, we are fully licensed and insured to carry out construction work in compliance with industry standards and regulations."
+  },
+  {
+    "id": "item-5",
+    "title": "Do you handle permits and inspections?",
+    "description": "Yes, we manage all necessary permits and inspections to ensure the project meets local building codes and safety standards."
+  },
+  {
+    "id": "item-6",
+    "title": "Can I make changes to the project once it's started?",
+    "description": "Yes, we allow clients to request changes, but it may affect the timeline and budget. We work closely with you to implement changes efficiently."
+  },
+  {
+    "id": "item-7",
+    "title": "What materials do you use for construction?",
+    "description": "We use high-quality, sustainable materials sourced from trusted suppliers to ensure durability and eco-friendliness in every project."
+  }
+]
