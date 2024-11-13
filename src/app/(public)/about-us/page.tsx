@@ -5,7 +5,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { IconChevronRight } from "@tabler/icons-react";
-import { DollarSign, Twitter, UsersRound, Warehouse } from "lucide-react";
+import { DollarSign, UsersRound, Warehouse } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
