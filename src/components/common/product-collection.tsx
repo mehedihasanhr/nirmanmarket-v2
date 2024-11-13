@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
@@ -45,9 +47,9 @@ export const ProductCollectionGrid = ({
   return (
     <div
       className={cn(
-        "products-grid-container",
+        "products-grid-container shadow-none",
         isHasAds &&
-          "grid grid-cols-1 md:grid-cols-[minmax(8rem,10rem),1fr] gap-2 md:gap-4",
+          "grid grid-cols-1 shadow-none md:grid-cols-[minmax(8rem,10rem),1fr] gap-2 md:gap-4",
       )}
     >
       {children}
@@ -58,7 +60,7 @@ export const ProductCollectionGrid = ({
 // ads
 export const ProductAds = ({ ads }: { ads: string[] }) => {
   return (
-    <div className="grid grid-cols-2 md:flex md:h-auto md:flex-col gap-4">
+    <div className="grid grid-cols-2 w-full md:flex md:h-auto md:flex-col gap-4">
       {ads.map((item, idx) => (
         <div
           key={idx}
@@ -81,5 +83,5 @@ export const ProductAds = ({ ads }: { ads: string[] }) => {
 
 // ProductGrids
 export const ProductGrid = ({ children }: { children?: React.ReactNode }) => {
-  return <div className="products-grid ">{children}</div>;
+  return <div className="products-grid shadow-none">{children}</div>;
 };

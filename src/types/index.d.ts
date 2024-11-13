@@ -14,3 +14,12 @@ export type SliderImageData = {
   id: string | number;
   image: string;
 };
+
+// team members
+export type TeamMembers = {
+  id: number;
+  image: StaticImageData;
+  name: string;
+  designation: string;
+  social: SocialLinks;
+};
