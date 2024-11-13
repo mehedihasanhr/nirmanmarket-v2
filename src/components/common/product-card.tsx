@@ -1,24 +1,19 @@
 "use client";
 
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
+import {
+  IconShoppingBagPlus,
+  IconStarFilled
+} from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
-import {
-  IconEye,
-  IconEyePin,
-  IconShoppingBagPlus,
-  IconStar,
-  IconStarFilled,
-} from "@tabler/icons-react";
-import Rating from "./rating";
-import { Popover } from "../ui/popover";
 import {
   Dialog,
   DialogContent,
   DialogHeader,
   DialogTrigger,
 } from "../ui/dialog";
-import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 import { Separator } from "../ui/separator";
 
 type ProductCardProps = {

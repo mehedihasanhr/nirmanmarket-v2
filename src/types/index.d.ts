@@ -23,3 +23,15 @@ export type TeamMembers = {
   designation: string;
   social: SocialLinks;
 };
+
+
+export type SliderImage = {
+  title: string;
+  imgUrl: string;
+}
+
+export type SliderItem = {
+  id: number;
+  title: string;
+  images: SliderImage[];
+}
