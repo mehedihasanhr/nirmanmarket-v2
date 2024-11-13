@@ -32,6 +32,11 @@ const nextConfig = {
         hostname: "placehold.co",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "preview.keenthemes.com",
+        pathname: "/**",
+      },
     ],
   },
 };
