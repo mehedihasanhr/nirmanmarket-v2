@@ -17,26 +17,10 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Separator } from "@/components/ui/separator";
 import { faker } from "@faker-js/faker";
-import {
-  IconCheckbox,
-  IconChevronRight,
-  IconStarFilled,
-} from "@tabler/icons-react";
-import {
-  Bath,
-  BedDouble,
-  CarTaxiFront,
-  DoorOpen,
-  ListFilter,
-  MapPin,
-  PencilRuler,
-  ShowerHead,
-  Tag,
-  UtensilsCrossed,
-} from "lucide-react";
+import { IconChevronRight, IconStarFilled } from "@tabler/icons-react";
+import { ListFilter, Tag } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import _ from "lodash";
 const ProductCard = dynamic(() => import("@/components/common/product-card"), {
   ssr: false,
 });
@@ -46,22 +30,6 @@ export default async function FlatDetails() {
   const products = await fetch("http://localhost:3000/api/products").then(
     (res) => res.json(),
   );
-
-  const dummyObject = {
-    age: 11,
-    diningCapacity: 20,
-    installmentFacility: "true",
-    type: "Apartment",
-    security: "3 Step Security",
-    totalFloors: 3,
-    gardenAndField: 1400,
-    heatingSystem: "Floor Heating",
-    exits: 3,
-    elevators: 3,
-    firePlace: "true",
-    insurance: "true",
-    swimmingPool: "true",
-  };
 
   return (
     <>
@@ -174,167 +142,25 @@ export default async function FlatDetails() {
         </div>
 
         <div className="container p-4">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr,300px] gap-4 p-6 bg-background rounded-xl">
-            <div className="flex flex-col gap-6">
-              <ul className="space-y-3 flex flex-col text-sm">
-                <li className="flex gap-3 text-gray-500">
-                  <Tag size={16} className="mt-1" />
-                  <p>
-                    <mark className="bg-transparent text-gray-700">
-                      {"Special Price "}
-                    </mark>
-                    Get extra 23% off (price inclusive of discount)
-                  </p>
+          <div className="grid grid-cols-[1fr,300px] gap-4 p-6 bg-background rounded-xl">
+            <div>
+              <ul className="space-y-2 flex flex-col">
+                <li className="flex items-center gap-3 text-gray-400">
+                  <Tag />
+                  <mark className="bg-transparent text-gray-700">
+                    Special Price
+                  </mark>
+                  Get extra 23% off (price inclusive of discount)
                 </li>
 
-                <li className="flex items-center gap-3 text-gray-500">
-                  <Tag size={16} className="mt-1" />
-                  <p>
-                    <mark className="bg-transparent text-gray-700">
-                      {"Bank Offer "}
-                    </mark>
-                    10% instant discount on Visa Cards
-                  </p>
-                </li>
-
-                <li className="flex items-center gap-3 text-gray-500">
-                  <Tag size={16} className="mt-1" />
-                  <p>
-                    <mark className="bg-transparent text-gray-700">
-                      {"No cost EMI $54/month "}
-                    </mark>
-                    Standard EMI also available
-                  </p>
+                <li className="flex items-center gap-3 text-gray-400">
+                  <Tag />
+                  <mark className="bg-transparent text-gray-700">
+                    Bank Offer
+                  </mark>
+                  Get extra 23% off (price inclusive of discount)
                 </li>
               </ul>
-
-              <Separator className="bg-gray-200" />
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 flex-wrap text-gray-500">
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <DoorOpen size={20} />
-                  <span>Room: 6</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <BedDouble size={20} />
-                  <span>Beds: 4</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <ShowerHead size={20} />
-                  <span>Bathroom: 2</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <UtensilsCrossed size={20} />
-                  <span>Kitchen: 2</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <PencilRuler size={20} />
-                  <span className="whitespace-nowrap">Area: 1300 Sqft</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <CarTaxiFront size={20} />
-                  <span>Cars: 2</span>
-                </div>
-
-                <div className="flex items-center whitespace-nowrap gap-2.5">
-                  <Bath size={20} />
-                  <span>Cars: 2</span>
-                </div>
-              </div>
-
-              <div className="mt-6 flex flex-col gap-2">
-                <h4> Details </h4>
-
-                <p className="text-sm text-gray-500">
-                  Shah Cement is a prominent brand of cement in Bangladesh,
-                  known for its high quality and durability
-                  <Button
-                    variant="link"
-                    size="sm"
-                    className="px-2 py-1 text-base"
-                  >
-                    See More..
-                  </Button>
-                </p>
-              </div>
-            </div>
-
-            <div>
-              <Image
-                src="https://placehold.co/600x400/png?text=ads"
-                alt=""
-                width={600}
-                height={400}
-                loading="lazy"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="container p-4">
-          <div className="grid grid-cols-[1fr,350px] gap-4">
-            <div>
-              <div className="bg-background rounded-xl p-6 mb-6">
-                <h3 className="mb-6">More Information</h3>
-                <div className="grid grid-cols-3 gap-3">
-                  {Array.from(Object.entries(dummyObject)).map(
-                    ([key, value]) => (
-                      <div
-                        key={key}
-                        className="text-gray-500 [&>span]:text-gray-700"
-                      >
-                        <span>{_.startCase(key)}: </span>
-                        {value}
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-
-              <div className="bg-background rounded-xl p-6">
-                <h3 className="mb-6">More Information</h3>
-                <div className="grid grid-cols-3 gap-3">
-                  {Array.from(Object.entries(dummyObject)).map(
-                    ([key, value]) => (
-                      <div
-                        key={key}
-                        className="text-gray-500 flex items-center gap-1.5 [&>span]:text-gray-700"
-                      >
-                        <span>
-                          <IconCheckbox className="text-primary/50" />
-                        </span>
-                        {value}
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-4 bg-background rounded-xl p-6">
-              <h3> See Nearest Location </h3>
-              <Separator />
-
-              <div className="flex flex-col gap-2.5">
-                {Array.from(Array(6)).map((_, index) => (
-                  <div className="flex gap-4 items-center" key={index}>
-                    <div className="size-16 rounded-xl bg-gray-100" />
-                    <div className="flex flex-col text-gray-700">
-                      <h5> Nirala Appartment </h5>
-                      <div className="flex items-center gap-2 text-sm text-gray-400">
-                        <MapPin size={16} />
-                        Location
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </div>

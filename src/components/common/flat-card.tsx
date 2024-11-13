@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
-import { IconShoppingBagPlus, IconStarFilled } from "@tabler/icons-react";
+import { IconStarFilled } from "@tabler/icons-react";
 import {
   Dialog,
   DialogContent,
@@ -11,7 +11,6 @@ import {
   DialogTrigger,
 } from "../ui/dialog";
 import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
-import { Separator } from "../ui/separator";
 import { Bath, BedDouble, CarTaxiFront, PencilRuler } from "lucide-react";
 import { cn } from "@/lib/utils";
 

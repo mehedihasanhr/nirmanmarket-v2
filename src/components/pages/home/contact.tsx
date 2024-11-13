@@ -154,8 +154,11 @@ export default function Contact() {
 
           <Form {...form}>
             <form className="flex flex-col gap-y-6">
-              {fields.map((field) => renderFormField(field))}
-
+              {fields.map((field, index) => (
+                <React.Fragment key={index}>
+                  {renderFormField(field)}
+                </React.Fragment>
+              ))}
               <Button className="w-fit"> Send </Button>
             </form>
           </Form>

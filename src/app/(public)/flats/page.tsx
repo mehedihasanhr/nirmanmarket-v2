@@ -16,12 +16,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { faker } from "@faker-js/faker";
 import { IconSearch } from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
 
-export default function Flats() {
+export default async function Flats() {
+  // dummy data
+  const products = await fetch("http://localhost:3000/api/products").then(
+    (res) => res.json(),
+  );
+
   return (
     <div>
       <section className="relative w-full md:aspect-[3/2] md:max-h-[400px]">
@@ -107,15 +111,16 @@ export default function Flats() {
                 />
 
                 <ProductGrid>
-                  {Array.from({ length: 10 }).map((_, index) => (
+                  {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+                  {products?.data?.map((product: any) => (
                     <FlatCard
-                      key={index}
+                      key={product.id}
                       product={{
                         image: "https://picsum.photos/seed/picsum/300/200",
-                        title: faker.commerce.productName(),
-                        description: faker.commerce.productDescription(),
-                        location: faker.location.city(),
-                        price: Number(faker.finance.amount()),
+                        title: product.title,
+                        description: product.description,
+                        location: product.location,
+                        price: product.price,
                         rating: 2.5,
                         discount: 10,
                         discountType: "amount",
