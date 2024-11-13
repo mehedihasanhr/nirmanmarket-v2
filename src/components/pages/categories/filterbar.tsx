@@ -25,10 +25,12 @@ import { IconFilter } from "@tabler/icons-react";
 export default function FilterBar() {
   const [isEnableDrawerMode, setIsEnableDrawerMode] = React.useState(false);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 641) {
         setIsEnableDrawerMode(true);
+      } else {
+        setIsEnableDrawerMode(false);
       }
     };
 
