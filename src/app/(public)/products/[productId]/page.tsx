@@ -46,9 +46,12 @@ export default function ProductDetails() {
               <div className="col-span-12 lg:col-span-6">
                 <ProductImageSlide
                   images={[
-                    "https://placehold.co/400x400/png?text=slider1",
-                    "https://placehold.co/400x400/png?text=slider2",
-                    "https://placehold.co/400x400/png?text=slider3",
+                    "https://picsum.photos/3000/3000.webp?rendom=10",
+                    "https://picsum.photos/3000/3000.webp?rendom=11",
+                    "https://picsum.photos/3000/3000.webp?rendom=12",
+                    "https://picsum.photos/3000/3000.webp?rendom=14",
+                    "https://picsum.photos/3000/3000.webp?rendom=5",
+                    "https://picsum.photos/3000/3000.webp?rendom=3",
                   ]}
                 />
               </div>
