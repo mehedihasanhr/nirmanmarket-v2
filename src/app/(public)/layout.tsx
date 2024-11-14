@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { TopBar, Header, Navbar } from "@/components/layout";
+import { Footer } from "@/components/layout/footer";
 
 export default function PublicPageLayout({
   children,
@@ -11,6 +12,7 @@ export default function PublicPageLayout({
       <Header />
       <Navbar />
       {children}
+      <Footer />
     </main>
   );
 }

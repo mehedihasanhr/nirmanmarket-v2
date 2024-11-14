@@ -1,27 +1,17 @@
 import ProductCard from "@/components/common/product-card";
 import ProductCardLoader from "@/components/common/product-card-loader";
 import {
-  ProductCollectionContainer,
-  ProductCollectionHeading,
-  ProductCollectionGrid,
   ProductAds,
+  ProductCollectionContainer,
+  ProductCollectionGrid,
+  ProductCollectionHeading,
   ProductGrid,
 } from "@/components/common/product-collection";
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from "@/components/ui/select";
+import FilterBar from "@/components/pages/categories/filterbar";
 import { faker } from "@faker-js/faker";
 import { IconChevronRight } from "@tabler/icons-react";
 import Link from "next/link";
 import React from "react";
-import categories from "@/constants/categories.json";
-import { Checkbox } from "@/components/ui/checkbox";
-import Rating from "@/components/common/rating";
-import FilterBar from "@/components/pages/categories/filterbar";
 
 export default async function Categories() {
   const products = await fetch("http://localhost:3000/api/products").then(

@@ -14,3 +14,5 @@
 - **Product Details** : `/products/[productId]`
 - **Stores** : `/store/[storeId]`
 - **Terms and Conditions** : `/terms-and-conditions`
+- **Categories** : `/categories`
+- **Services** : `/services`
