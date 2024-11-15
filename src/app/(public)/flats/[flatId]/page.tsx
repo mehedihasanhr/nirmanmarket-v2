@@ -43,9 +43,7 @@ const ProductCard = dynamic(() => import("@/components/common/product-card"), {
 
 export default async function FlatDetails() {
   // dummy data
-  const products = await fetch("http://localhost:3000/api/products").then(
-    (res) => res.json(),
-  );
+  const products = await fetch("/api/products").then((res) => res.json());
 
   const dummyObject = {
     age: 11,

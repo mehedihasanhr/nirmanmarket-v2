@@ -22,9 +22,7 @@ import React from "react";
 
 export default async function Flats() {
   // dummy data
-  const products = await fetch("http://localhost:3000/api/products").then(
-    (res) => res.json(),
-  );
+  const products = await fetch("/api/products").then((res) => res.json());
 
   return (
     <div>
