@@ -8,16 +8,13 @@ import {
   ProductGrid,
 } from "@/components/common/product-collection";
 import FilterBar from "@/components/pages/categories/filterbar";
-import { faker } from "@faker-js/faker";
 import { IconChevronRight } from "@tabler/icons-react";
 import Link from "next/link";
 import React from "react";
 
-export default async function Categories() {
-  const products = await fetch("http://localhost:3000/api/products").then(
-    (res) => res.json(),
-  );
+import products from "@/constants/products.json";
 
+export default async function Categories() {
   return (
     <div className="py-8">
       <div className="container">
@@ -43,7 +40,7 @@ export default async function Categories() {
 
                 <ProductGrid>
                   {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                  {products?.data?.map((product: any) => (
+                  {products?.map((product: any) => (
                     <React.Suspense
                       key={product.id}
                       fallback={<ProductCardLoader />}
@@ -51,10 +48,10 @@ export default async function Categories() {
                       <ProductCard
                         product={{
                           image: "https://picsum.photos/seed/picsum/300/200",
-                          title: faker.commerce.productName(),
-                          description: faker.commerce.productDescription(),
-                          location: faker.location.city(),
-                          price: Number(faker.finance.amount()),
+                          title: product.title,
+                          description: product.description,
+                          location: "",
+                          price: product.price,
                           rating: 2.5,
                           discount: 10,
                           discountType: "amount",

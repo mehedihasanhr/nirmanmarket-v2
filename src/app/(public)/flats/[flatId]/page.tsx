@@ -41,12 +41,9 @@ const ProductCard = dynamic(() => import("@/components/common/product-card"), {
   ssr: false,
 });
 
-export default async function FlatDetails() {
-  // dummy data
-  const products = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/products`,
-  ).then((res) => res.json());
+import products from "@/constants/products.json";
 
+export default async function FlatDetails() {
   const dummyObject = {
     age: 11,
     diningCapacity: 20,
@@ -439,9 +436,9 @@ export default async function FlatDetails() {
               <div className="flex flex-col flex-1">
                 <div className="w-full">
                   <ReviewCart
-                    name={faker.person.firstName()}
+                    name="Jhon Doe"
                     rating={4.5}
-                    description={faker.lorem.lines()}
+                    description="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type ..."
                     time="2 days ago"
                     images={[
                       "https://placehold.co/50x50/png",
@@ -470,7 +467,7 @@ export default async function FlatDetails() {
 
             <ProductGrid>
               {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-              {products?.data?.map((product: any) => (
+              {products?.map((product: any) => (
                 <React.Suspense
                   key={product.id}
                   fallback={<ProductCardLoader />}
@@ -478,10 +475,10 @@ export default async function FlatDetails() {
                   <ProductCard
                     product={{
                       image: "https://picsum.photos/seed/picsum/300/200",
-                      title: faker.commerce.productName(),
-                      description: faker.commerce.productDescription(),
-                      location: faker.location.city(),
-                      price: Number(faker.finance.amount()),
+                      title: product.title,
+                      description: product.description,
+                      location: "",
+                      price: product.price,
                       rating: 2.5,
                       discount: 10,
                       discountType: "amount",

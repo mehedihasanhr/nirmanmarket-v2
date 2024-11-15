@@ -20,12 +20,9 @@ import { IconSearch } from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
 
-export default async function Flats() {
-  // dummy data
-  const products = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/products`,
-  ).then((res) => res.json());
+import products from "@/constants/products.json";
 
+export default async function Flats() {
   return (
     <div>
       <section className="relative w-full md:aspect-[3/2] md:max-h-[400px]">
@@ -112,7 +109,7 @@ export default async function Flats() {
 
                 <ProductGrid>
                   {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-                  {products?.data?.map((product: any) => (
+                  {products?.map((product: any) => (
                     <FlatCard
                       key={product.id}
                       product={{

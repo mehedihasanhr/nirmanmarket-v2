@@ -1,0 +1,154 @@
+[
+  {
+    "id": "f1d5d557-22b8-4a1a-a497-f179da61de5e",
+    "title": "Sleek Wooden Car",
+    "description": "Ergonomically designed and made with precision.",
+    "price": "850.00",
+    "discount": "25.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "f9be5d2d-07b2-49c9-8c4f-b46d5f8da640",
+    "title": "Elegant Concrete Salad",
+    "description": "Durable construction and easy to clean.",
+    "price": "399.99",
+    "discount": "30.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "3e3215ac-c8c1-4262-8469-3f5b8292e7fa",
+    "title": "Handcrafted Steel Shoes",
+    "description": "Exquisite craftsmanship with a touch of modern style.",
+    "price": "199.99",
+    "discount": "15.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "bbde14fa-1a1d-4f02-85c4-0c2d1fa5da7e",
+    "title": "Modern Plastic Keyboard",
+    "description": "Sleek design with tactile feedback.",
+    "price": "120.00",
+    "discount": "10.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "ed1385a6-68b9-4934-8a60-0eb944b5f09d",
+    "title": "Durable Soft Shirt",
+    "description": "Perfect for casual wear or formal events.",
+    "price": "55.00",
+    "discount": "5.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "c0c7b8fd-e788-4c9b-86f5-60ea89d93d2f",
+    "title": "Stylish Copper Plate",
+    "description": "Handcrafted from high-quality copper.",
+    "price": "250.00",
+    "discount": "20.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "ae69a74f-1cf4-4f39-86ad-2d9e76fc6d0b",
+    "title": "Exclusive Leather Pants",
+    "description": "Luxurious leather with a perfect fit.",
+    "price": "330.00",
+    "discount": "30.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "6d10752f-1745-46fe-bf0d-9636872b97a6",
+    "title": "Portable Steel Mug",
+    "description": "Compact and durable for on-the-go hydration.",
+    "price": "18.00",
+    "discount": "3.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "8dcd4e90-4b69-4a1a-87f7-0e5a5e16932a",
+    "title": "Luxury Ceramic Chair",
+    "description": "High-end ceramic finish with a comfortable design.",
+    "price": "200.00",
+    "discount": "10.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "5e5b8d16-07d7-4e4e-bbbf-5d33c5d559b1",
+    "title": "Rustic Glass Vase",
+    "description": "A beautiful piece for modern and traditional homes.",
+    "price": "50.00",
+    "discount": "15.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "c7e6a53f-639f-42c4-9754-4b89e4564565",
+    "title": "Antique Wooden Watch",
+    "description": "A unique piece for collectors with a vintage touch.",
+    "price": "700.00",
+    "discount": "50.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "3c1fa7ae-c4db-4b8f-8801-865832eb75d7",
+    "title": "Modern Leather Sofa",
+    "description": "Comfort and style combined for your living room.",
+    "price": "500.00",
+    "discount": "40.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "cf1b94ea-ef92-4cf9-87de-e3eb1040f3f9",
+    "title": "Luxury Plastic Fan",
+    "description": "Quiet and efficient with modern features.",
+    "price": "80.00",
+    "discount": "20.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "4c8c9677-e072-4c2b-b1b2-15fc4085ac7f",
+    "title": "Classic Ceramic Mug",
+    "description": "Durable ceramic with a sleek design.",
+    "price": "25.00",
+    "discount": "5.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "b57f2489-99ae-4f58-9e0c-4c1f60fe4013",
+    "title": "Silk Scarf",
+    "description": "Soft, luxurious, and elegant.",
+    "price": "45.00",
+    "discount": "5.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "1f9a60ff-9256-4f1c-b231-1c7c95638d68",
+    "title": "Elegant Brass Table",
+    "description": "Handcrafted with premium brass for a stylish look.",
+    "price": "200.00",
+    "discount": "15.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "7393be19-7880-4e43-912b-d7a032276a58",
+    "title": "Plastic Dining Table",
+    "description": "Perfect for both indoor and outdoor use.",
+    "price": "150.00",
+    "discount": "10.00",
+    "discountType": "percentage"
+  },
+  {
+    "id": "25c62ae5-47e1-4d07-a7d6-5a9a83a6bcd0",
+    "title": "Stylish Ceramic Plate",
+    "description": "An elegant piece to add style to any meal.",
+    "price": "60.00",
+    "discount": "5.00",
+    "discountType": "amount"
+  },
+  {
+    "id": "bb85a0fe-8fa3-456b-b3c2-55ff41f25f43",
+    "title": "Handmade Wooden Spoon",
+    "description": "Crafted from natural wood with care.",
+    "price": "15.00",
+    "discount": "3.00",
+    "discountType": "amount"
+  }
+]
